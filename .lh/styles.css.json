@@ -1,0 +1,38 @@
+{
+    "sourceFile": "styles.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1675281041241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1675281077629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,9 @@\n body{\n     display: flex;\n     flex-direction: column;\n+}\n+\n+.page-links_items{\n+    display: flex;\n+    flex-direction: row;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675281543048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,12 @@\n \n .page-links_items{\n     display: flex;\n     flex-direction: row;\n+}\n+\n+.grid_containers{\n+    display: grid;\n+    height:100px;\n+    align-content: space-between;\n+    gap:10px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675281576846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,15 @@\n     display: flex;\n     flex-direction: row;\n }\n \n+.grid_item{\n+    display: flex;\n+    flex-direction: row;\n+    align-content: center;\n+}\n+\n+\n .grid_containers{\n     display: grid;\n     height:100px;\n     align-content: space-between;\n"
+                },
+                {
+                    "date": 1675281982394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,5 +19,11 @@\n     display: grid;\n     height:100px;\n     align-content: space-between;\n     gap:10px;\n+}\n+\n+.grid_image_post_containers{\n+    display: flex;\n+    width: 1000px;\n+    height: 1000px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675282066788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,8 @@\n     align-content: space-between;\n     gap:10px;\n }\n \n-.grid_image_post_containers{\n-    display: flex;\n-    width: 1000px;\n-    height: 1000px;\n+.grid_image_post_containers img{\n+    width: 10em;\n+    height: 10em;\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1675281041241,
+            "name": "Commit-0",
+            "content": "body{\n    display: flex;\n    flex-direction: column;\n}"
+        }
+    ]
+}
