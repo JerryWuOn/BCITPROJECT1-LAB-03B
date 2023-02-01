@@ -8,7 +8,7 @@ body{
 .page_header{
     display: flex;
     flex-direction: row;
-    gap: 5em;
+    justify-content: space-between;
 }
 .page_header_logo{
     display: flex;
@@ -24,11 +24,6 @@ body{
     height: 0.5em;
 }
 
-
-
-.carousel_items{
-    list-style-type: none;
-}
 .page-links_items{
     display: flex;
     flex-direction: row;

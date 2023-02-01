@@ -27,7 +27,7 @@ body{
 
 
 .carousel_items{
-    list-style-type: none;
+    text-decoration: none;
 }
 .page-links_items{
     display: flex;

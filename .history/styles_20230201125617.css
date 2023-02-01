@@ -26,9 +26,7 @@ body{
 
 
 
-.carousel_items{
-    list-style-type: none;
-}
+carousel_items
 .page-links_items{
     display: flex;
     flex-direction: row;

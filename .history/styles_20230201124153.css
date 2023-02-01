@@ -3,31 +3,7 @@ body{
     flex-direction: column;
 }
 .page--home{
-    margin: 0 20em;
-}
-.page_header{
-    display: flex;
-    flex-direction: row;
-    gap: 5em;
-}
-.page_header_logo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.page_header_logo h1{
-    font-size: 1em;
-}
-.page_header_logo img{
-    width: 1em;
-    height: 0.5em;
-}
-
-
-
-.carousel_items{
-    list-style-type: none;
+    margin: 0 10px;
 }
 .page-links_items{
     display: flex;

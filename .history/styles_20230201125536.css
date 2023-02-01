@@ -24,11 +24,6 @@ body{
     height: 0.5em;
 }
 
-
-
-.carousel_items{
-    list-style-type: none;
-}
 .page-links_items{
     display: flex;
     flex-direction: row;
