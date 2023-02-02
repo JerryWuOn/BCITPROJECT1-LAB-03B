@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 5,
+            "activePatchIndex": 94,
             "patches": [
                 {
                     "date": 1675281041241,
@@ -28,6 +28,362 @@
                 {
                     "date": 1675282066788,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,8 @@\n     align-content: space-between;\n     gap:10px;\n }\n \n-.grid_image_post_containers{\n-    display: flex;\n-    width: 1000px;\n-    height: 1000px;\n+.grid_image_post_containers img{\n+    width: 10em;\n+    height: 10em;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675320518173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,41 @@\n body{\n     display: flex;\n     flex-direction: column;\n }\n+.page--home{\n+    margin: 0 20em;\n+}\n+.page_header{\n+    display: flex;\n+    flex-direction: row;\n+    gap: 5em;\n+}\n \n+.carousel_items{\n+  position: absolute;\n+  height: 100px;\n+}\n+\n+.page_header_logo{\n+    display: flex;\n+    flex-direction: row;\n+    align-items: center;\n+    justify-content: center;\n+}\n+.page_header_logo h1{\n+    font-size: 1em;\n+}\n+.page_header_logo img{\n+    width: 1em;\n+    height: 0.5em;\n+}\n+\n+\n+\n+.carousel_items{\n+    list-style-type: none;\n+}\n .page-links_items{\n     display: flex;\n     flex-direction: row;\n }\n@@ -24,5 +56,6 @@\n \n .grid_image_post_containers img{\n     width: 10em;\n     height: 10em;\n-}\n\\ No newline at end of file\n+}\n+\n"
+                },
+                {
+                    "date": 1675320530817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n }\n \n .carousel_items{\n   position: absolute;\n-  height: 100px;\n+  height: 30px;\n }\n \n .page_header_logo{\n     display: flex;\n"
+                },
+                {
+                    "date": 1675320536531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n }\n \n .carousel_items{\n   position: absolute;\n-  height: 30px;\n+  height: 20px;\n }\n \n .page_header_logo{\n     display: flex;\n"
+                },
+                {
+                    "date": 1675320600369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,13 +10,14 @@\n     flex-direction: row;\n     gap: 5em;\n }\n \n-.carousel_items{\n-  position: absolute;\n-  height: 20px;\n+.carousel_words{\n+ position: absolute;\n+ height: 30px;\n }\n \n+\n .page_header_logo{\n     display: flex;\n     flex-direction: row;\n     align-items: center;\n"
+                },
+                {
+                    "date": 1675320616734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n }\n \n .carousel_words{\n  position: absolute;\n- height: 30px;\n+ height: 30vh;\n }\n \n \n .page_header_logo{\n"
+                },
+                {
+                    "date": 1675320625011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,14 +10,11 @@\n     flex-direction: row;\n     gap: 5em;\n }\n \n-.carousel_words{\n- position: absolute;\n- height: 30vh;\n-}\n \n \n+\n .page_header_logo{\n     display: flex;\n     flex-direction: row;\n     align-items: center;\n"
+                },
+                {
+                    "date": 1675320666414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,11 +10,14 @@\n     flex-direction: row;\n     gap: 5em;\n }\n \n+.carousel_items{\n+    position: absolute;\n+    height: 20%;\n+}\n \n \n-\n .page_header_logo{\n     display: flex;\n     flex-direction: row;\n     align-items: center;\n"
+                },
+                {
+                    "date": 1675320708185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,11 +10,10 @@\n     flex-direction: row;\n     gap: 5em;\n }\n \n-.carousel_items{\n-    position: absolute;\n-    height: 20%;\n+.carosel_picture{\n+    align-items: center;\n }\n \n \n .page_header_logo{\n"
+                },
+                {
+                    "date": 1675320761163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n body{\n     display: flex;\n     flex-direction: column;\n+    align-content: center;\n }\n .page--home{\n     margin: 0 20em;\n }\n"
+                },
+                {
+                    "date": 1675320838243,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n body{\n     display: flex;\n     flex-direction: column;\n-    align-content: center;\n+    align-items: center;\n }\n .page--home{\n     margin: 0 20em;\n }\n"
+                },
+                {
+                    "date": 1675320878060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,10 +30,12 @@\n     width: 1em;\n     height: 0.5em;\n }\n \n+.comp_name{\n+    text-align: center;\n+}\n \n-\n .carousel_items{\n     list-style-type: none;\n }\n .page-links_items{\n"
+                },
+                {
+                    "date": 1675320901248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n }\n \n .comp_name{\n     text-align: center;\n+    font-size: 40px;\n }\n \n .carousel_items{\n     list-style-type: none;\n"
+                },
+                {
+                    "date": 1675320909579,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n }\n \n .comp_name{\n     text-align: center;\n-    font-size: 40px;\n+    font-size: 30px;\n }\n \n .carousel_items{\n     list-style-type: none;\n"
+                },
+                {
+                    "date": 1675320917782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n }\n \n .comp_name{\n     text-align: center;\n-    font-size: 30px;\n+    font-size: 25px;\n }\n \n .carousel_items{\n     list-style-type: none;\n"
+                },
+                {
+                    "date": 1675320964058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,4 +62,7 @@\n     width: 10em;\n     height: 10em;\n }\n \n+.comp_description{\n+    padding-top: 10px;\n+}\n"
+                },
+                {
+                    "date": 1675320978540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,6 +63,6 @@\n     height: 10em;\n }\n \n .comp_description{\n-    padding-top: 10px;\n+    padding-top: 15px;\n }\n"
+                },
+                {
+                    "date": 1675321008841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n body{\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n+    text-align: center;\n }\n .page--home{\n     margin: 0 20em;\n }\n@@ -31,9 +32,8 @@\n     height: 0.5em;\n }\n \n .comp_name{\n-    text-align: center;\n     font-size: 25px;\n }\n \n .carousel_items{\n"
+                },
+                {
+                    "date": 1675321030200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,5 +64,6 @@\n }\n \n .comp_description{\n     padding-top: 15px;\n+    font-size: 20px;\n }\n"
+                },
+                {
+                    "date": 1675321043931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,6 +64,5 @@\n }\n \n .comp_description{\n     padding-top: 15px;\n-    font-size: 20px;\n }\n"
+                },
+                {
+                    "date": 1675321064004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,4 +65,8 @@\n \n .comp_description{\n     padding-top: 15px;\n }\n+\n+.comp_description_header{\n+    font-size: 15px;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675321092721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,6 +67,10 @@\n     padding-top: 15px;\n }\n \n .comp_description_header{\n+    font-size: 25px;\n+}\n+\n+.comp_description_descriptio{\n     font-size: 15px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675321262669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,9 @@\n \n \n .grid_containers{\n     display: grid;\n+    grid-template-columns: auto auto auto auto;\n     height:100px;\n     align-content: space-between;\n     gap:10px;\n }\n"
+                },
+                {
+                    "date": 1675321442746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,13 +51,10 @@\n }\n \n \n .grid_containers{\n-    display: grid;\n-    grid-template-columns: auto auto auto auto;\n-    height:100px;\n-    align-content: space-between;\n-    gap:10px;\n+    display: flex;\n+    flex-direction: row;\n }\n \n .grid_image_post_containers img{\n     width: 10em;\n"
+                },
+                {
+                    "date": 1675321468842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n }\n \n .grid_item{\n     display: flex;\n-    flex-direction: row;\n+    flex-direction: column;\n     align-content: center;\n }\n \n \n"
+                },
+                {
+                    "date": 1675321603586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,8 +49,11 @@\n     flex-direction: column;\n     align-content: center;\n }\n \n+.grid_item img{\n+     height: 30px;\n+}\n \n .grid_containers{\n     display: flex;\n     flex-direction: row;\n"
+                },
+                {
+                    "date": 1675321609214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n     align-content: center;\n }\n \n .grid_item img{\n-     height: 30px;\n+     height: 50px;\n }\n \n .grid_containers{\n     display: flex;\n"
+                },
+                {
+                    "date": 1675321615709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,8 +51,9 @@\n }\n \n .grid_item img{\n      height: 50px;\n+     width: 50px;\n }\n \n .grid_containers{\n     display: flex;\n"
+                },
+                {
+                    "date": 1675321633126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,10 +50,10 @@\n     align-content: center;\n }\n \n .grid_item img{\n-     height: 50px;\n-     width: 50px;\n+     height: 70px;\n+     width: 70px;\n }\n \n .grid_containers{\n     display: flex;\n"
+                },
+                {
+                    "date": 1675321666483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,9 @@\n \n .grid_item img{\n      height: 70px;\n      width: 70px;\n+     align-content: center;\n }\n \n .grid_containers{\n     display: flex;\n"
+                },
+                {
+                    "date": 1675321692657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,14 +47,14 @@\n .grid_item{\n     display: flex;\n     flex-direction: column;\n     align-content: center;\n+    align-items: center;\n }\n \n .grid_item img{\n      height: 70px;\n      width: 70px;\n-     align-content: center;\n }\n \n .grid_containers{\n     display: flex;\n"
+                },
+                {
+                    "date": 1675321708617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,9 @@\n     display: flex;\n     flex-direction: column;\n     align-content: center;\n     align-items: center;\n+    padding-top: 30px;\n }\n \n .grid_item img{\n      height: 70px;\n"
+                },
+                {
+                    "date": 1675321741344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,9 @@\n \n .grid_containers{\n     display: flex;\n     flex-direction: row;\n+    margin: 20px;\n }\n \n .grid_image_post_containers img{\n     width: 10em;\n"
+                },
+                {
+                    "date": 1675321752618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n \n .grid_containers{\n     display: flex;\n     flex-direction: row;\n-    margin: 20px;\n+    gap: 20px;\n }\n \n .grid_image_post_containers img{\n     width: 10em;\n"
+                },
+                {
+                    "date": 1675321794915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,8 +62,12 @@\n     flex-direction: row;\n     gap: 20px;\n }\n \n+.grid_containers p{\n+ font-size: 15px;\n+}\n+\n .grid_image_post_containers img{\n     width: 10em;\n     height: 10em;\n }\n"
+                },
+                {
+                    "date": 1675321805190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     gap: 20px;\n }\n \n .grid_containers p{\n- font-size: 15px;\n+ font-size: 13px;\n }\n \n .grid_image_post_containers img{\n     width: 10em;\n"
+                },
+                {
+                    "date": 1675321818880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     gap: 20px;\n }\n \n .grid_containers p{\n- font-size: 13px;\n+ font-size: 14px;\n }\n \n .grid_image_post_containers img{\n     width: 10em;\n"
+                },
+                {
+                    "date": 1675321832192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n \n .grid_containers{\n     display: flex;\n     flex-direction: row;\n-    gap: 20px;\n+    gap: 22px;\n }\n \n .grid_containers p{\n  font-size: 14px;\n"
+                },
+                {
+                    "date": 1675321841591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n \n .grid_containers{\n     display: flex;\n     flex-direction: row;\n-    gap: 22px;\n+    gap: 24px;\n }\n \n .grid_containers p{\n  font-size: 14px;\n"
+                },
+                {
+                    "date": 1675321988068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,9 +75,11 @@\n .comp_description{\n     padding-top: 15px;\n }\n \n-.comp_description_header{\n+.comp_description_header \n+.image_post_header \n+.multiple_image_header{\n     font-size: 25px;\n }\n \n .comp_description_descriptio{\n"
+                },
+                {
+                    "date": 1675322014175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,11 +75,9 @@\n .comp_description{\n     padding-top: 15px;\n }\n \n-.comp_description_header \n-.image_post_header \n-.multiple_image_header{\n+.comp_description_header{\n     font-size: 25px;\n }\n \n .comp_description_descriptio{\n"
+                },
+                {
+                    "date": 1675322041933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,7 +79,11 @@\n .comp_description_header{\n     font-size: 25px;\n }\n \n+.image_post_header{\n+    font-size: 25px;\n+}\n+\n .comp_description_descriptio{\n     font-size: 15px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675322057424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,9 +75,10 @@\n .comp_description{\n     padding-top: 15px;\n }\n \n-.comp_description_header{\n+.comp_description_header\n+.image_post_heade{\n     font-size: 25px;\n }\n \n .image_post_header{\n"
+                },
+                {
+                    "date": 1675322074043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,10 +75,9 @@\n .comp_description{\n     padding-top: 15px;\n }\n \n-.comp_description_header\n-.image_post_heade{\n+.comp_description_header {\n     font-size: 25px;\n }\n \n .image_post_header{\n"
+                },
+                {
+                    "date": 1675322113415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,5 +85,9 @@\n }\n \n .comp_description_descriptio{\n     font-size: 15px;\n+}\n+\n+.image_post_description{\n+    font-size: 15px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675322159415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,8 +83,12 @@\n .image_post_header{\n     font-size: 25px;\n }\n \n+.multiple_image_header{\n+    font-size: 25px;\n+}\n+\n .comp_description_descriptio{\n     font-size: 15px;\n }\n \n"
+                },
+                {
+                    "date": 1675322182714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,5 +93,9 @@\n }\n \n .image_post_description{\n     font-size: 15px;\n+}\n+\n+.multiple_image_description{\n+    font-size: 15px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675322219338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,8 +77,9 @@\n }\n \n .comp_description_header {\n     font-size: 25px;\n+    padding-top: 30px;\n }\n \n .image_post_header{\n     font-size: 25px;\n"
+                },
+                {
+                    "date": 1675322235068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,12 +82,14 @@\n }\n \n .image_post_header{\n     font-size: 25px;\n+    padding-top: 30px;\n }\n \n .multiple_image_header{\n     font-size: 25px;\n+    padding-top: 30px;\n }\n \n .comp_description_descriptio{\n     font-size: 15px;\n"
+                },
+                {
+                    "date": 1675322331484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,8 +66,13 @@\n .grid_containers p{\n  font-size: 14px;\n }\n \n+.grid_image_post_containers{\n+    display: grid;\n+    grid-template-columns: auto auto auto;\n+}\n+\n .grid_image_post_containers img{\n     width: 10em;\n     height: 10em;\n }\n"
+                },
+                {
+                    "date": 1675322347986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,9 +72,9 @@\n     grid-template-columns: auto auto auto;\n }\n \n .grid_image_post_containers img{\n-    width: 10em;\n+    width: 20em;\n     height: 10em;\n }\n \n .comp_description{\n"
+                },
+                {
+                    "date": 1675322370572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,13 +69,14 @@\n \n .grid_image_post_containers{\n     display: grid;\n     grid-template-columns: auto auto auto;\n+    gap: 20px\n }\n \n .grid_image_post_containers img{\n     width: 20em;\n-    height: 10em;\n+    height: 20em;\n }\n \n .comp_description{\n     padding-top: 15px;\n"
+                },
+                {
+                    "date": 1675322379998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,9 @@\n \n .grid_image_post_containers{\n     display: grid;\n     grid-template-columns: auto auto auto;\n-    gap: 20px\n+    gap: 40px;\n }\n \n .grid_image_post_containers img{\n     width: 20em;\n"
+                },
+                {
+                    "date": 1675322396631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,9 @@\n \n .grid_image_post_containers{\n     display: grid;\n     grid-template-columns: auto auto auto;\n-    gap: 40px;\n+    gap: 60px;\n }\n \n .grid_image_post_containers img{\n     width: 20em;\n"
+                },
+                {
+                    "date": 1675322409964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,9 @@\n \n .grid_image_post_containers{\n     display: grid;\n     grid-template-columns: auto auto auto;\n-    gap: 60px;\n+    gap: 90px;\n }\n \n .grid_image_post_containers img{\n     width: 20em;\n"
+                },
+                {
+                    "date": 1675322417248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,9 @@\n \n .grid_image_post_containers{\n     display: grid;\n     grid-template-columns: auto auto auto;\n-    gap: 90px;\n+    gap: 150px;\n }\n \n .grid_image_post_containers img{\n     width: 20em;\n"
+                },
+                {
+                    "date": 1675322437272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,8 +70,9 @@\n .grid_image_post_containers{\n     display: grid;\n     grid-template-columns: auto auto auto;\n     gap: 150px;\n+    padding-top: 10x;\n }\n \n .grid_image_post_containers img{\n     width: 20em;\n"
+                },
+                {
+                    "date": 1675322468602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,9 +70,9 @@\n .grid_image_post_containers{\n     display: grid;\n     grid-template-columns: auto auto auto;\n     gap: 150px;\n-    padding-top: 10x;\n+    padding-top: 10px;\n }\n \n .grid_image_post_containers img{\n     width: 20em;\n@@ -89,9 +89,9 @@\n }\n \n .image_post_header{\n     font-size: 25px;\n-    padding-top: 30px;\n+    padding-top: 35px;\n }\n \n .multiple_image_header{\n     font-size: 25px;\n"
+                },
+                {
+                    "date": 1675322502237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,14 +89,14 @@\n }\n \n .image_post_header{\n     font-size: 25px;\n-    padding-top: 35px;\n+    padding-top: 50px;\n }\n \n .multiple_image_header{\n     font-size: 25px;\n-    padding-top: 30px;\n+    padding-top: 40px;\n }\n \n .comp_description_descriptio{\n     font-size: 15px;\n"
+                },
+                {
+                    "date": 1675322694134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,5 +107,11 @@\n }\n \n .multiple_image_description{\n     font-size: 15px;\n+}\n+\n+.grid_multiple_image_containers{\n+    display: grid;\n+    grid-template-columns: auto auto auto auto;\n+    grid-template-rows: auto auto;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675322709681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,7 +111,7 @@\n }\n \n .grid_multiple_image_containers{\n     display: grid;\n-    grid-template-columns: auto auto auto auto;\n-    grid-template-rows: auto auto;\n+    grid-template-columns: auto auto auto;\n+    grid-template-rows: auto auto auto;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675322743517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,5 +113,10 @@\n .grid_multiple_image_containers{\n     display: grid;\n     grid-template-columns: auto auto auto;\n     grid-template-rows: auto auto auto;\n+}\n+\n+.grid_multiple_image_containers img{\n+    width: 20em;\n+    height: 20em;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675322771412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,5 +118,6 @@\n \n .grid_multiple_image_containers img{\n     width: 20em;\n     height: 20em;\n+    gap: 150px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675322790491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,11 +113,11 @@\n .grid_multiple_image_containers{\n     display: grid;\n     grid-template-columns: auto auto auto;\n     grid-template-rows: auto auto auto;\n+    gap: 150px;\n }\n \n .grid_multiple_image_containers img{\n     width: 20em;\n     height: 20em;\n-    gap: 150px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675322814365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,9 +113,9 @@\n .grid_multiple_image_containers{\n     display: grid;\n     grid-template-columns: auto auto auto;\n     grid-template-rows: auto auto auto;\n-    gap: 150px;\n+    padding-left: 150px;\n }\n \n .grid_multiple_image_containers img{\n     width: 20em;\n"
+                },
+                {
+                    "date": 1675322834009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,9 +113,8 @@\n .grid_multiple_image_containers{\n     display: grid;\n     grid-template-columns: auto auto auto;\n     grid-template-rows: auto auto auto;\n-    padding-left: 150px;\n }\n \n .grid_multiple_image_containers img{\n     width: 20em;\n"
+                },
+                {
+                    "date": 1675322967093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,5 +118,10 @@\n \n .grid_multiple_image_containers img{\n     width: 20em;\n     height: 20em;\n+}\n+\n+.sample_menu_header{\n+    font-size: 25px;\n+    padding-top: 40px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675323367665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,5 +123,9 @@\n \n .sample_menu_header{\n     font-size: 25px;\n     padding-top: 40px;\n+}\n+\n+.thingsabove{\n+    padding-top: 5px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675323448462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,14 @@\n     flex-direction: column;\n     align-items: center;\n     text-align: center;\n }\n+\n+footer{\n+ background-color: rgb(37, 37, 127);\n+}\n+\n+\n .page--home{\n     margin: 0 20em;\n }\n .page_header{\n@@ -126,6 +132,6 @@\n     padding-top: 40px;\n }\n \n .thingsabove{\n-    padding-top: 5px;\n+    padding-top: 10px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675323485014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n }\n \n footer{\n  background-color: rgb(37, 37, 127);\n+ padding-left: 30px;\n }\n \n \n .page--home{\n"
+                },
+                {
+                    "date": 1675323493807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n \n footer{\n  background-color: rgb(37, 37, 127);\n- padding-left: 30px;\n+ padding-left: q00px;\n }\n \n \n .page--home{\n"
+                },
+                {
+                    "date": 1675323508120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n \n footer{\n  background-color: rgb(37, 37, 127);\n- padding-left: q00px;\n+ padding-left: 100px;\n }\n \n \n .page--home{\n"
+                },
+                {
+                    "date": 1675323515085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n \n footer{\n  background-color: rgb(37, 37, 127);\n- padding-left: 100px;\n+ padding-left: 900px;\n }\n \n \n .page--home{\n"
+                },
+                {
+                    "date": 1675323526952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n \n footer{\n  background-color: rgb(37, 37, 127);\n- padding-left: 900px;\n+ padding-left: 400px;\n }\n \n \n .page--home{\n"
+                },
+                {
+                    "date": 1675323535452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n \n footer{\n  background-color: rgb(37, 37, 127);\n- padding-left: 400px;\n+ \n }\n \n \n .page--home{\n"
+                },
+                {
+                    "date": 1675324141888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -134,5 +134,10 @@\n }\n \n .thingsabove{\n     padding-top: 10px;\n+}\n+\n+.grid_sponsor_logo_containers{\n+    display: grid;\n+    grid-template-columns: auto auto auto auto;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675324181996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,5 +139,10 @@\n \n .grid_sponsor_logo_containers{\n     display: grid;\n     grid-template-columns: auto auto auto auto;\n+}\n+\n+.grid_sponsor_logo_containers img{\n+    width:300px;\n+    height: 100%;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675324194572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,9 +138,9 @@\n }\n \n .grid_sponsor_logo_containers{\n     display: grid;\n-    grid-template-columns: auto auto auto auto;\n+    grid-template-columns: auto auto auto auto auto;\n }\n \n .grid_sponsor_logo_containers img{\n     width:300px;\n"
+                },
+                {
+                    "date": 1675324206457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -142,7 +142,7 @@\n     grid-template-columns: auto auto auto auto auto;\n }\n \n .grid_sponsor_logo_containers img{\n-    width:300px;\n+    width:200px;\n     height: 100%;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675324220964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,5 +144,6 @@\n \n .grid_sponsor_logo_containers img{\n     width:200px;\n     height: 100%;\n+    gap: 30px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675324231848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -142,8 +142,7 @@\n     grid-template-columns: auto auto auto auto auto;\n }\n \n .grid_sponsor_logo_containers img{\n-    width:200px;\n+    width:230px;\n     height: 100%;\n-    gap: 30px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675324258726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -142,7 +142,7 @@\n     grid-template-columns: auto auto auto auto auto;\n }\n \n .grid_sponsor_logo_containers img{\n-    width:230px;\n+    width:200px;\n     height: 100%;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675324265990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,8 +139,9 @@\n \n .grid_sponsor_logo_containers{\n     display: grid;\n     grid-template-columns: auto auto auto auto auto;\n+    gap:30px\n }\n \n .grid_sponsor_logo_containers img{\n     width:200px;\n"
+                },
+                {
+                    "date": 1675324289151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,9 +139,10 @@\n \n .grid_sponsor_logo_containers{\n     display: grid;\n     grid-template-columns: auto auto auto auto auto;\n-    gap:30px\n+    gap:30px;\n+    padding-top: 50px;\n }\n \n .grid_sponsor_logo_containers img{\n     width:200px;\n"
+                },
+                {
+                    "date": 1675324319142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\n \n footer{\n  background-color: rgb(37, 37, 127);\n- \n+ padding-top: 300px;\n }\n \n \n .page--home{\n"
+                },
+                {
+                    "date": 1675324328528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,14 +4,11 @@\n     align-items: center;\n     text-align: center;\n }\n \n-footer{\n- background-color: rgb(37, 37, 127);\n- padding-top: 300px;\n-}\n \n \n+\n .page--home{\n     margin: 0 20em;\n }\n .page_header{\n"
+                },
+                {
+                    "date": 1675324450245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,8 +131,9 @@\n }\n \n .thingsabove{\n     padding-top: 10px;\n+    width: 80vh;\n }\n \n .grid_sponsor_logo_containers{\n     display: grid;\n"
+                },
+                {
+                    "date": 1675324458503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,9 +131,9 @@\n }\n \n .thingsabove{\n     padding-top: 10px;\n-    width: 80vh;\n+    width: 900px;\n }\n \n .grid_sponsor_logo_containers{\n     display: grid;\n"
+                },
+                {
+                    "date": 1675324469660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,9 +131,9 @@\n }\n \n .thingsabove{\n     padding-top: 10px;\n-    width: 900px;\n+    width: 1500px;\n }\n \n .grid_sponsor_logo_containers{\n     display: grid;\n"
+                },
+                {
+                    "date": 1675324477082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,9 +131,9 @@\n }\n \n .thingsabove{\n     padding-top: 10px;\n-    width: 1500px;\n+    width: 1200px;\n }\n \n .grid_sponsor_logo_containers{\n     display: grid;\n"
                 }
             ],
             "date": 1675281041241,

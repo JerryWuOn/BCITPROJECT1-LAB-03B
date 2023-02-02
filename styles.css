@@ -1,7 +1,13 @@
 body{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
+
+
+
+
 .page--home{
     margin: 0 20em;
 }
@@ -10,6 +16,12 @@ body{
     flex-direction: row;
     gap: 5em;
 }
+
+.carosel_picture{
+    align-items: center;
+}
+
+
 .page_header_logo{
     display: flex;
     flex-direction: row;
@@ -24,7 +36,9 @@ body{
     height: 0.5em;
 }
 
-
+.comp_name{
+    font-size: 25px;
+}
 
 .carousel_items{
     list-style-type: none;
@@ -36,19 +50,99 @@ body{
 
 .grid_item{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: center;
+    align-items: center;
+    padding-top: 30px;
 }
 
+.grid_item img{
+     height: 70px;
+     width: 70px;
+}
 
 .grid_containers{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.grid_containers p{
+ font-size: 14px;
+}
+
+.grid_image_post_containers{
     display: grid;
-    height:100px;
-    align-content: space-between;
-    gap:10px;
+    grid-template-columns: auto auto auto;
+    gap: 150px;
+    padding-top: 10px;
 }
 
 .grid_image_post_containers img{
-    width: 10em;
-    height: 10em;
+    width: 20em;
+    height: 20em;
+}
+
+.comp_description{
+    padding-top: 15px;
+}
+
+.comp_description_header {
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+.image_post_header{
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+.multiple_image_header{
+    font-size: 25px;
+    padding-top: 40px;
+}
+
+.comp_description_descriptio{
+    font-size: 15px;
+}
+
+.image_post_description{
+    font-size: 15px;
+}
+
+.multiple_image_description{
+    font-size: 15px;
+}
+
+.grid_multiple_image_containers{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.grid_multiple_image_containers img{
+    width: 20em;
+    height: 20em;
+}
+
+.sample_menu_header{
+    font-size: 25px;
+    padding-top: 40px;
+}
+
+.thingsabove{
+    padding-top: 10px;
+    width: 1200px;
+}
+
+.grid_sponsor_logo_containers{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap:30px;
+    padding-top: 50px;
+}
+
+.grid_sponsor_logo_containers img{
+    width:200px;
+    height: 100%;
 }
