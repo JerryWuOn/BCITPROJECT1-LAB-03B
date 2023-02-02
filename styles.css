@@ -218,3 +218,7 @@ height: 100%;
     flex-direction: row;
     gap: 30px;
 }
+
+.footer_enter_email{
+    padding-left: 20px;
+}

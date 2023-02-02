@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 150,
+            "activePatchIndex": 151,
             "patches": [
                 {
                     "date": 1675281041241,
@@ -608,6 +608,10 @@
                 {
                     "date": 1675368141448,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -209,8 +209,9 @@\n \n .footer_comp_tweets img{\n    width: 40px;\n    height: 40px;\n+   padding-top: 10px;\n }\n \n .footer_comp_tweets{\n     display: flex;\n"
+                },
+                {
+                    "date": 1675369739242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,5 +216,9 @@\n .footer_comp_tweets{\n     display: flex;\n     flex-direction: row;\n     gap: 30px;\n+}\n+\n+.footer_enter_email{\n+    padding-left: 20px;\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1675281041241,
