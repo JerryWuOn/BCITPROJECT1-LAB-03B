@@ -1,11 +1,19 @@
+:root{
+    --font1-: 'Open Sans';
+}
+
+
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-family: var(--font1-);
 }
 
-
+footer{
+    padding-top: 180px;
+}
 
 
 .page--home{
@@ -153,3 +161,60 @@ height: 100%;
     width: 100%;
     height: 100%;
     }
+
+
+.peewee_herman img{
+    width:50px;
+    height: 50px;
+    padding-top: 30px;
+}
+
+.peewee_herman{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    gap:10px;
+}
+
+.footer_info_containers{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    padding-top: 120px;
+    gap:40px;
+    text-align: left;
+}
+
+.social_links_icons{
+ display: flex;
+ flex-direction: row;
+ gap:3px;
+}
+
+.social_links_items{
+   width:30px;
+   height: 30px;
+}
+
+.grid_footer_minion_pics img{
+    width:80px;
+    height: 100%;
+    gap: 3px;
+}
+
+.grid_footer_minion_pics{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto auto;
+}
+
+.footer_comp_tweets img{
+   width: 40px;
+   height: 40px;
+   padding-top: 10px;
+}
+
+.footer_comp_tweets{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
