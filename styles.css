@@ -74,7 +74,6 @@ body{
 .grid_image_post_containers{
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 150px;
     padding-top: 10px;
 }
 
@@ -84,7 +83,7 @@ body{
 }
 
 .comp_description{
-    padding-top: 15px;
+    padding-top: 0.938em;
 }
 
 .comp_description_header {
@@ -103,15 +102,15 @@ body{
 }
 
 .comp_description_descriptio{
-    font-size: 15px;
+    font-size: 0.938em;
 }
 
 .image_post_description{
-    font-size: 15px;
+    font-size: 0.938em;
 }
 
 .multiple_image_description{
-    font-size: 15px;
+    font-size: 0.938em;
 }
 
 .grid_multiple_image_containers{
@@ -130,16 +129,22 @@ body{
     padding-top: 40px;
 }
 
-.thingsabove{
+.accordion{
     padding-top: 10px;
-    width: 1200px;
+    width: 687px;
 }
 
-.grid_sponsor_logo_containers{
+.grid_sponsor_logo_parent_containers{
+    width: 700px;
+}
+
+.grid_sponsor_logo_child_containers{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     gap:30px;
     padding-top: 50px;
+    justify-content: center;
+    
 }
 
 .grid_sponsor_logo_containers img{
