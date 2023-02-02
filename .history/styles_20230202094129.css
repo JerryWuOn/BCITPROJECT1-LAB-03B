@@ -140,6 +140,7 @@ object-fit: contain;
 
 .grid_sponsor_logo_child_containers{
     display: grid;
+    width: 100px;
     grid-template-columns: auto auto auto auto auto;
     gap:30px;
     padding-top: 50px;

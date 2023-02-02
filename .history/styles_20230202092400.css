@@ -135,7 +135,8 @@ body{
 }
 
 .grid_sponsor_logo_parent_containers{
-object-fit: contain;
+display: grid;
+width: 100px;
 }
 
 .grid_sponsor_logo_child_containers{
@@ -143,9 +144,11 @@ object-fit: contain;
     grid-template-columns: auto auto auto auto auto;
     gap:30px;
     padding-top: 50px;
+    justify-content: center;
+    
 }
 
 .grid_sponsor_logo_containers img{
-max-width: 100%;
-max-height: 100%;
+    width:200px;
+    height: 100%;
 }
