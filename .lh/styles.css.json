@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 151,
+            "activePatchIndex": 309,
             "patches": [
                 {
                     "date": 1675281041241,
@@ -612,6 +612,638 @@
                 {
                     "date": 1675369739242,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,5 +216,9 @@\n .footer_comp_tweets{\n     display: flex;\n     flex-direction: row;\n     gap: 30px;\n+}\n+\n+.footer_enter_email{\n+    padding-left: 20px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675400383337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,13 +10,8 @@\n     text-align: center;\n     font-family: var(--font1-);\n }\n \n-footer{\n-    padding-top: 180px;\n-}\n-\n-\n .page--home{\n     margin: 0 20em;\n }\n .page_header{\n@@ -175,8 +170,15 @@\n     text-align: left;\n     gap:10px;\n }\n \n+\n+footer{\n+    padding-top: 180px;\n+}\n+\n+\n+\n .footer_info_containers{\n     display: grid;\n     grid-template-columns: 300px 300px 300px 300px;\n     padding-top: 120px;\n"
+                },
+                {
+                    "date": 1675466394544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,12 @@\n     text-align: center;\n     font-family: var(--font1-);\n }\n \n+.carousel_items li{\n+    \n+}\n+\n .page--home{\n     margin: 0 20em;\n }\n .page_header{\n"
+                },
+                {
+                    "date": 1675473037133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,11 +10,8 @@\n     text-align: center;\n     font-family: var(--font1-);\n }\n \n-.carousel_items li{\n-    \n-}\n \n .page--home{\n     margin: 0 20em;\n }\n@@ -81,8 +78,9 @@\n .grid_image_post_containers{\n     display: grid;\n     grid-template-columns: auto auto auto;\n     padding-top: 10px;\n+    gap: 30px;\n }\n \n .grid_image_post_containers img{\n     width: 20em;\n"
+                },
+                {
+                    "date": 1675473131215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n     padding-top: 30px;\n }\n \n .grid_item img{\n-     height: 70px;\n+     height: 100%;\n      width: 70px;\n }\n \n .grid_containers{\n"
+                },
+                {
+                    "date": 1675473150510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n     padding-top: 30px;\n }\n \n .grid_item img{\n-     height: 100%;\n+     height: 100px;\n      width: 70px;\n }\n \n .grid_containers{\n"
+                },
+                {
+                    "date": 1675473158600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n     padding-top: 30px;\n }\n \n .grid_item img{\n-     height: 100px;\n+     height: 120px;\n      width: 70px;\n }\n \n .grid_containers{\n"
+                },
+                {
+                    "date": 1675473176495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n     padding-top: 30px;\n }\n \n .grid_item img{\n-     height: 120px;\n+     height: 70px;\n      width: 70px;\n }\n \n .grid_containers{\n"
+                },
+                {
+                    "date": 1675473192189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n     gap: 30px;\n }\n \n .grid_image_post_containers img{\n-    width: 20em;\n+    width: 30em;\n     height: 20em;\n }\n \n .comp_description{\n"
+                },
+                {
+                    "date": 1675473199240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n     gap: 30px;\n }\n \n .grid_image_post_containers img{\n-    width: 30em;\n+    width: 25em;\n     height: 20em;\n }\n \n .comp_description{\n"
+                },
+                {
+                    "date": 1675473280724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,9 +124,9 @@\n     grid-template-rows: auto auto auto;\n }\n \n .grid_multiple_image_containers img{\n-    width: 20em;\n+    width: 25em;\n     height: 20em;\n }\n \n .sample_menu_header{\n"
+                },
+                {
+                    "date": 1675473289758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,8 +121,9 @@\n .grid_multiple_image_containers{\n     display: grid;\n     grid-template-columns: auto auto auto;\n     grid-template-rows: auto auto auto;\n+    gap: 25px;\n }\n \n .grid_multiple_image_containers img{\n     width: 25em;\n"
+                },
+                {
+                    "date": 1675473496735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,10 +125,10 @@\n     gap: 25px;\n }\n \n .grid_multiple_image_containers img{\n-    width: 25em;\n-    height: 20em;\n+    width: 15em;\n+    height: 10em;\n }\n \n .sample_menu_header{\n     font-size: 25px;\n"
+                },
+                {
+                    "date": 1675473511486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,9 +125,9 @@\n     gap: 25px;\n }\n \n .grid_multiple_image_containers img{\n-    width: 15em;\n+    width: 16em;\n     height: 10em;\n }\n \n .sample_menu_header{\n"
+                },
+                {
+                    "date": 1675473532427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,10 +82,10 @@\n     gap: 30px;\n }\n \n .grid_image_post_containers img{\n-    width: 25em;\n-    height: 20em;\n+    width: 16em;\n+    height: 10em;\n }\n \n .comp_description{\n     padding-top: 0.938em;\n"
+                },
+                {
+                    "date": 1675473795090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     height: 0.5em;\n }\n \n .comp_name{\n-    font-size: 25px;\n+    font-size: 1.5em;\n }\n \n .carousel_items{\n     list-style-type: none;\n"
+                },
+                {
+                    "date": 1675473841584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n     display: flex;\n     flex-direction: column;\n     align-content: center;\n     align-items: center;\n-    padding-top: 30px;\n+    padding-top: 2em;\n }\n \n .grid_item img{\n      height: 70px;\n"
+                },
+                {
+                    "date": 1675473873718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,10 +60,10 @@\n     padding-top: 2em;\n }\n \n .grid_item img{\n-     height: 70px;\n-     width: 70px;\n+     height: 4em;\n+     width: 4em;\n }\n \n .grid_containers{\n     display: flex;\n"
+                },
+                {
+                    "date": 1675473957498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,9 +67,9 @@\n \n .grid_containers{\n     display: flex;\n     flex-direction: row;\n-    gap: 24px;\n+    gap: 1.5em;\n }\n \n .grid_containers p{\n  font-size: 14px;\n"
+                },
+                {
+                    "date": 1675473969817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,9 +71,9 @@\n     gap: 1.5em;\n }\n \n .grid_containers p{\n- font-size: 14px;\n+ font-size: 1em;\n }\n \n .grid_image_post_containers{\n     display: grid;\n"
+                },
+                {
+                    "date": 1675474003687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,10 +60,10 @@\n     padding-top: 2em;\n }\n \n .grid_item img{\n-     height: 4em;\n-     width: 4em;\n+     height: 5em;\n+     width: 5em;\n }\n \n .grid_containers{\n     display: flex;\n"
+                },
+                {
+                    "date": 1675474039709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,9 +71,9 @@\n     gap: 1.5em;\n }\n \n .grid_containers p{\n- font-size: 1em;\n+ font-size: 0.5em;\n }\n \n .grid_image_post_containers{\n     display: grid;\n"
+                },
+                {
+                    "date": 1675474263510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,8 +74,12 @@\n .grid_containers p{\n  font-size: 0.5em;\n }\n \n+.grid_containers h3{\n+    font-size: 0.8em;\n+}\n+\n .grid_image_post_containers{\n     display: grid;\n     grid-template-columns: auto auto auto;\n     padding-top: 10px;\n"
+                },
+                {
+                    "date": 1675474320016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,8 +68,10 @@\n .grid_containers{\n     display: flex;\n     flex-direction: row;\n     gap: 1.5em;\n+    padding-left: 18em;\n+    padding-right: 18em;\n }\n \n .grid_containers p{\n  font-size: 0.5em;\n"
+                },
+                {
+                    "date": 1675474347518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,9 +73,9 @@\n     padding-right: 18em;\n }\n \n .grid_containers p{\n- font-size: 0.5em;\n+ font-size: 0.3em;\n }\n \n .grid_containers h3{\n     font-size: 0.8em;\n"
+                },
+                {
+                    "date": 1675474397048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,18 +68,18 @@\n .grid_containers{\n     display: flex;\n     flex-direction: row;\n     gap: 1.5em;\n-    padding-left: 18em;\n-    padding-right: 18em;\n+    padding-left: 20em;\n+    padding-right: 20em;\n }\n \n .grid_containers p{\n  font-size: 0.3em;\n }\n \n .grid_containers h3{\n-    font-size: 0.8em;\n+    font-size: 0.5em;\n }\n \n .grid_image_post_containers{\n     display: grid;\n"
+                },
+                {
+                    "date": 1675474412635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,10 +68,10 @@\n .grid_containers{\n     display: flex;\n     flex-direction: row;\n     gap: 1.5em;\n-    padding-left: 20em;\n-    padding-right: 20em;\n+    padding-left: 25em;\n+    padding-right: 25em;\n }\n \n .grid_containers p{\n  font-size: 0.3em;\n"
+                },
+                {
+                    "date": 1675474536444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,10 +68,10 @@\n .grid_containers{\n     display: flex;\n     flex-direction: row;\n     gap: 1.5em;\n-    padding-left: 25em;\n-    padding-right: 25em;\n+    padding-left: 22em;\n+    padding-right: 22em;\n }\n \n .grid_containers p{\n  font-size: 0.3em;\n"
+                },
+                {
+                    "date": 1675474545893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,10 +68,10 @@\n .grid_containers{\n     display: flex;\n     flex-direction: row;\n     gap: 1.5em;\n-    padding-left: 22em;\n-    padding-right: 22em;\n+    padding-left: 25em;\n+    padding-right: 25em;\n }\n \n .grid_containers p{\n  font-size: 0.3em;\n"
+                },
+                {
+                    "date": 1675474558789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,10 +68,10 @@\n .grid_containers{\n     display: flex;\n     flex-direction: row;\n     gap: 1.5em;\n-    padding-left: 25em;\n-    padding-right: 25em;\n+    padding-left: 30em;\n+    padding-right: 30em;\n }\n \n .grid_containers p{\n  font-size: 0.3em;\n"
+                },
+                {
+                    "date": 1675474569398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,10 +68,10 @@\n .grid_containers{\n     display: flex;\n     flex-direction: row;\n     gap: 1.5em;\n-    padding-left: 30em;\n-    padding-right: 30em;\n+    padding-left: 15em;\n+    padding-right: 15em;\n }\n \n .grid_containers p{\n  font-size: 0.3em;\n"
+                },
+                {
+                    "date": 1675474585343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,10 +68,10 @@\n .grid_containers{\n     display: flex;\n     flex-direction: row;\n     gap: 1.5em;\n-    padding-left: 15em;\n-    padding-right: 15em;\n+    padding-left: 14em;\n+    padding-right: 14em;\n }\n \n .grid_containers p{\n  font-size: 0.3em;\n"
+                },
+                {
+                    "date": 1675474671745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,10 +131,10 @@\n     gap: 25px;\n }\n \n .grid_multiple_image_containers img{\n-    width: 16em;\n-    height: 10em;\n+    width: 19em;\n+    height: 13em;\n }\n \n .sample_menu_header{\n     font-size: 25px;\n"
+                },
+                {
+                    "date": 1675474686944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,9 +131,9 @@\n     gap: 25px;\n }\n \n .grid_multiple_image_containers img{\n-    width: 19em;\n+    width: 25em;\n     height: 13em;\n }\n \n .sample_menu_header{\n"
+                },
+                {
+                    "date": 1675474702753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -132,9 +132,9 @@\n }\n \n .grid_multiple_image_containers img{\n     width: 25em;\n-    height: 13em;\n+    height: 100%;\n }\n \n .sample_menu_header{\n     font-size: 25px;\n"
+                },
+                {
+                    "date": 1675474732995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,10 +88,10 @@\n     gap: 30px;\n }\n \n .grid_image_post_containers img{\n-    width: 16em;\n-    height: 10em;\n+    width: 25em;\n+    height: 100%;\n }\n \n .comp_description{\n     padding-top: 0.938em;\n"
+                },
+                {
+                    "date": 1675474887730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -135,8 +135,12 @@\n     width: 25em;\n     height: 100%;\n }\n \n+.thingsabove{\n+  width: 80em;\n+}\n+\n .sample_menu_header{\n     font-size: 25px;\n     padding-top: 40px;\n }\n@@ -231,5 +235,5 @@\n }\n \n .footer_enter_email{\n     padding-left: 20px;\n-}\n\\ No newline at end of file\n+}\n"
+                },
+                {
+                    "date": 1675474901933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,8 +137,9 @@\n }\n \n .thingsabove{\n   width: 80em;\n+  align-items: center;\n }\n \n .sample_menu_header{\n     font-size: 25px;\n"
+                },
+                {
+                    "date": 1675474916422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n }\n \n .thingsabove{\n   width: 80em;\n-  align-items: center;\n+  align-self: center;\n }\n \n .sample_menu_header{\n     font-size: 25px;\n"
+                },
+                {
+                    "date": 1675474931298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n }\n \n .thingsabove{\n   width: 80em;\n-  align-self: center;\n+  align-content: center;\n }\n \n .sample_menu_header{\n     font-size: 25px;\n"
+                },
+                {
+                    "date": 1675474949739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,8 +138,9 @@\n \n .thingsabove{\n   width: 80em;\n   align-content: center;\n+  display: relative;\n }\n \n .sample_menu_header{\n     font-size: 25px;\n"
+                },
+                {
+                    "date": 1675474965885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,10 +137,9 @@\n }\n \n .thingsabove{\n   width: 80em;\n-  align-content: center;\n-  display: relative;\n+  height: 100%;\n }\n \n .sample_menu_header{\n     font-size: 25px;\n"
+                },
+                {
+                    "date": 1675474975219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,8 +138,9 @@\n \n .thingsabove{\n   width: 80em;\n   height: 100%;\n+  align-items: center;\n }\n \n .sample_menu_header{\n     font-size: 25px;\n"
+                },
+                {
+                    "date": 1675475162133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -167,9 +167,9 @@\n width: 100%;\n height: 100%;\n }\n .grid_sponsor_logo_item img{\n-    width: 100%;\n+    width: 14em;\n     height: 100%;\n     }\n \n \n"
+                },
+                {
+                    "date": 1675475209830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,12 +162,9 @@\n     gap:30px;\n     padding-top: 50px;\n }\n \n-.grid_sponsor_logo_item{\n-width: 100%;\n-height: 100%;\n-}\n+\n .grid_sponsor_logo_item img{\n     width: 14em;\n     height: 100%;\n     }\n"
+                },
+                {
+                    "date": 1675475456582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -214,9 +214,9 @@\n     height: 100%;\n     gap: 3px;\n }\n \n-.grid_footer_minion_pics{\n+.grid_footer_multiple_pics{\n     display: grid;\n     grid-template-columns: auto auto auto ;\n     grid-template-rows: auto auto;\n }\n"
+                },
+                {
+                    "date": 1675475541355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -208,9 +208,9 @@\n    width:30px;\n    height: 30px;\n }\n \n-.grid_footer_minion_pics img{\n+.grid_footer_items img{\n     width:80px;\n     height: 100%;\n     gap: 3px;\n }\n"
+                },
+                {
+                    "date": 1675475600327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -208,9 +208,9 @@\n    width:30px;\n    height: 30px;\n }\n \n-.grid_footer_items img{\n+.grid_footer_item{\n     width:80px;\n     height: 100%;\n     gap: 3px;\n }\n"
+                },
+                {
+                    "date": 1675475626275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -209,9 +209,9 @@\n    height: 30px;\n }\n \n .grid_footer_item{\n-    width:80px;\n+    width:30px;\n     height: 100%;\n     gap: 3px;\n }\n \n"
+                },
+                {
+                    "date": 1675475705920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -218,14 +218,15 @@\n .grid_footer_multiple_pics{\n     display: grid;\n     grid-template-columns: auto auto auto ;\n     grid-template-rows: auto auto;\n+    gap:10\n }\n \n .footer_comp_tweets img{\n    width: 40px;\n    height: 40px;\n-   padding-top: 10px;\n+   padding-top: 0.6em;\n }\n \n .footer_comp_tweets{\n     display: flex;\n"
+                },
+                {
+                    "date": 1675475738616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -224,9 +224,9 @@\n \n .footer_comp_tweets img{\n    width: 40px;\n    height: 40px;\n-   padding-top: 0.6em;\n+\n }\n \n .footer_comp_tweets{\n     display: flex;\n"
+                },
+                {
+                    "date": 1675475746393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -218,9 +218,9 @@\n .grid_footer_multiple_pics{\n     display: grid;\n     grid-template-columns: auto auto auto ;\n     grid-template-rows: auto auto;\n-    gap:10\n+    gap: o.6em;\n }\n \n .footer_comp_tweets img{\n    width: 40px;\n"
+                },
+                {
+                    "date": 1675475761474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -209,11 +209,10 @@\n    height: 30px;\n }\n \n .grid_footer_item{\n-    width:30px;\n+    width:1.8em;\n     height: 100%;\n-    gap: 3px;\n }\n \n .grid_footer_multiple_pics{\n     display: grid;\n"
+                },
+                {
+                    "date": 1675475783244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,9 +162,12 @@\n     gap:30px;\n     padding-top: 50px;\n }\n \n-\n+.grid_sponsor_logo_item{\n+width: 100%;\n+height: 100%;\n+}\n .grid_sponsor_logo_item img{\n     width: 14em;\n     height: 100%;\n     }\n@@ -208,24 +211,24 @@\n    width:30px;\n    height: 30px;\n }\n \n-.grid_footer_item{\n-    width:1.8em;\n+.grid_footer_minion_pics img{\n+    width:80px;\n     height: 100%;\n+    gap: 3px;\n }\n \n-.grid_footer_multiple_pics{\n+.grid_footer_minion_pics{\n     display: grid;\n     grid-template-columns: auto auto auto ;\n     grid-template-rows: auto auto;\n-    gap: o.6em;\n }\n \n .footer_comp_tweets img{\n    width: 40px;\n    height: 40px;\n-\n+   padding-top: 10px;\n }\n \n .footer_comp_tweets{\n     display: flex;\n"
+                },
+                {
+                    "date": 1675475909823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -188,8 +188,9 @@\n \n \n footer{\n     padding-top: 180px;\n+    background-color: rgb(34, 34, 72);\n }\n \n \n \n"
+                },
+                {
+                    "date": 1675475929194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -187,9 +187,9 @@\n }\n \n \n footer{\n-    padding-top: 180px;\n+    padding-top: 300px;\n     background-color: rgb(34, 34, 72);\n }\n \n \n"
+                },
+                {
+                    "date": 1675476029748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -153,8 +153,9 @@\n }\n \n .grid_sponsor_logo_parent_containers{\n object-fit: contain;\n+padding-bottom: 100px;\n }\n \n .grid_sponsor_logo_child_containers{\n     display: grid;\n@@ -187,9 +188,9 @@\n }\n \n \n footer{\n-    padding-top: 300px;\n+    padding-top: 30px;\n     background-color: rgb(34, 34, 72);\n }\n \n \n"
+                },
+                {
+                    "date": 1675476078797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,16 @@\n :root{\n-    --font1-: 'Open Sans';\n+    --font-: 'Open Sans';\n+    --font-colour\n }\n \n \n body{\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n     text-align: center;\n-    font-family: var(--font1-);\n+    font-family: var(--font-);\n }\n \n \n .page--home{\n"
+                },
+                {
+                    "date": 1675476089144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n :root{\n     --font-: 'Open Sans';\n-    --font-colour\n+    --font-colour: white;\n }\n \n \n body{\n"
+                },
+                {
+                    "date": 1675476119149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -191,8 +191,9 @@\n \n footer{\n     padding-top: 30px;\n     background-color: rgb(34, 34, 72);\n+    color: var(--font-colour);\n }\n \n \n \n"
+                },
+                {
+                    "date": 1675476415938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -192,8 +192,9 @@\n footer{\n     padding-top: 30px;\n     background-color: rgb(34, 34, 72);\n     color: var(--font-colour);\n+    width:100vh;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1675476424512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -192,9 +192,9 @@\n footer{\n     padding-top: 30px;\n     background-color: rgb(34, 34, 72);\n     color: var(--font-colour);\n-    width:100vh;\n+    width:100%;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1675476441783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -192,9 +192,9 @@\n footer{\n     padding-top: 30px;\n     background-color: rgb(34, 34, 72);\n     color: var(--font-colour);\n-    width:100%;\n+    width:100dvh;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1675476451060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -192,9 +192,9 @@\n footer{\n     padding-top: 30px;\n     background-color: rgb(34, 34, 72);\n     color: var(--font-colour);\n-    width:100dvh;\n+    width:100vh;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1675476515074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -193,8 +193,9 @@\n     padding-top: 30px;\n     background-color: rgb(34, 34, 72);\n     color: var(--font-colour);\n     width:100vh;\n+    height: 63em;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1675476529048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -193,9 +193,9 @@\n     padding-top: 30px;\n     background-color: rgb(34, 34, 72);\n     color: var(--font-colour);\n     width:100vh;\n-    height: 63em;\n+    height: 40em;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1675476846935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -196,10 +196,16 @@\n     width:100vh;\n     height: 40em;\n }\n \n+.footer_info_text{\n+    border-bottom: 3px solid;\n+    \n+}\n \n \n+\n+\n .footer_info_containers{\n     display: grid;\n     grid-template-columns: 300px 300px 300px 300px;\n     padding-top: 120px;\n@@ -244,4 +250,5 @@\n \n .footer_enter_email{\n     padding-left: 20px;\n }\n+\n"
+                },
+                {
+                    "date": 1675476885357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -190,9 +190,9 @@\n \n \n footer{\n     padding-top: 30px;\n-    background-color: rgb(34, 34, 72);\n+    /* background-color: rgb(34, 34, 72); */\n     color: var(--font-colour);\n     width:100vh;\n     height: 40em;\n }\n"
+                },
+                {
+                    "date": 1675476892548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -191,9 +191,9 @@\n \n footer{\n     padding-top: 30px;\n     /* background-color: rgb(34, 34, 72); */\n-    color: var(--font-colour);\n+    /* color: var(--font-colour); */\n     width:100vh;\n     height: 40em;\n }\n \n"
+                },
+                {
+                    "date": 1675476953871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -201,11 +201,15 @@\n     border-bottom: 3px solid;\n     \n }\n \n+.footer_comp_text{\n+    border-bottom: 3px solid;\n+}\n \n \n \n+\n .footer_info_containers{\n     display: grid;\n     grid-template-columns: 300px 300px 300px 300px;\n     padding-top: 120px;\n"
+                },
+                {
+                    "date": 1675477575391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -205,11 +205,24 @@\n .footer_comp_text{\n     border-bottom: 3px solid;\n }\n \n+.footer_info_aboutus_header{\n+border-bottom: 3px solid rgb(56, 197, 56);\n+}\n \n+.footer_info_photos_header{\n+border-bottom: 3px solid yellow;\n+}\n \n+.footer_comp_tweets_header{\n+border-bottom: 3px solid rgb(245, 88, 88);\n+}\n \n+.footer_info_newsletter_header{\n+border-bottom: 3px solid rgb(88, 214, 245);\n+}\n+\n .footer_info_containers{\n     display: grid;\n     grid-template-columns: 300px 300px 300px 300px;\n     padding-top: 120px;\n"
+                },
+                {
+                    "date": 1675477706661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -192,9 +192,9 @@\n footer{\n     padding-top: 30px;\n     /* background-color: rgb(34, 34, 72); */\n     /* color: var(--font-colour); */\n-    width:100vh;\n+    width:60em;\n     height: 40em;\n }\n \n .footer_info_text{\n"
+                },
+                {
+                    "date": 1675477771340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -192,9 +192,9 @@\n footer{\n     padding-top: 30px;\n     /* background-color: rgb(34, 34, 72); */\n     /* color: var(--font-colour); */\n-    width:60em;\n+    width:80em;\n     height: 40em;\n }\n \n .footer_info_text{\n"
+                },
+                {
+                    "date": 1675477819988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -227,8 +227,9 @@\n     grid-template-columns: 300px 300px 300px 300px;\n     padding-top: 120px;\n     gap:40px;\n     text-align: left;\n+    width: 80em;\n }\n \n .social_links_icons{\n  display: flex;\n"
+                },
+                {
+                    "date": 1675477847836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -227,9 +227,8 @@\n     grid-template-columns: 300px 300px 300px 300px;\n     padding-top: 120px;\n     gap:40px;\n     text-align: left;\n-    width: 80em;\n }\n \n .social_links_icons{\n  display: flex;\n"
+                },
+                {
+                    "date": 1675477977510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -149,9 +149,8 @@\n }\n \n .accordion{\n     padding-top: 10px;\n-    width: 687px;\n }\n \n .grid_sponsor_logo_parent_containers{\n object-fit: contain;\n"
+                },
+                {
+                    "date": 1675478075882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -226,8 +226,9 @@\n     grid-template-columns: 300px 300px 300px 300px;\n     padding-top: 120px;\n     gap:40px;\n     text-align: left;\n+    width: 80em;\n }\n \n .social_links_icons{\n  display: flex;\n"
+                },
+                {
+                    "date": 1675478404553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -222,9 +222,9 @@\n }\n \n .footer_info_containers{\n     display: grid;\n-    grid-template-columns: 300px 300px 300px 300px;\n+    grid-template-columns: 7em 7em 7em 7em;\n     padding-top: 120px;\n     gap:40px;\n     text-align: left;\n     width: 80em;\n"
+                },
+                {
+                    "date": 1675478439484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -222,9 +222,9 @@\n }\n \n .footer_info_containers{\n     display: grid;\n-    grid-template-columns: 7em 7em 7em 7em;\n+    grid-template-columns: 20em 20em 20em 20em;\n     padding-top: 120px;\n     gap:40px;\n     text-align: left;\n     width: 80em;\n"
+                },
+                {
+                    "date": 1675478462710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -222,9 +222,9 @@\n }\n \n .footer_info_containers{\n     display: grid;\n-    grid-template-columns: 20em 20em 20em 20em;\n+    grid-template-columns: 18em 18em 18em 18em;\n     padding-top: 120px;\n     gap:40px;\n     text-align: left;\n     width: 80em;\n"
+                },
+                {
+                    "date": 1675478531180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -189,10 +189,10 @@\n \n \n footer{\n     padding-top: 30px;\n-    /* background-color: rgb(34, 34, 72); */\n-    /* color: var(--font-colour); */\n+    background-color: rgb(34, 34, 72);\n+    color: var(--font-colour);\n     width:80em;\n     height: 40em;\n }\n \n"
+                },
+                {
+                    "date": 1675478691274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -210,8 +210,9 @@\n }\n \n .footer_info_photos_header{\n border-bottom: 3px solid yellow;\n+font-size: 0.6em;\n }\n \n .footer_comp_tweets_header{\n border-bottom: 3px solid rgb(245, 88, 88);\n"
+                },
+                {
+                    "date": 1675478702876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -210,9 +210,9 @@\n }\n \n .footer_info_photos_header{\n border-bottom: 3px solid yellow;\n-font-size: 0.6em;\n+font-size: 1em;\n }\n \n .footer_comp_tweets_header{\n border-bottom: 3px solid rgb(245, 88, 88);\n"
+                },
+                {
+                    "date": 1675478760159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -195,24 +195,18 @@\n     width:80em;\n     height: 40em;\n }\n \n-.footer_info_text{\n-    border-bottom: 3px solid;\n-    \n+.grid_footer_info_items h2{\n+ font-size: 1em;\n }\n \n-.footer_comp_text{\n-    border-bottom: 3px solid;\n-}\n-\n .footer_info_aboutus_header{\n border-bottom: 3px solid rgb(56, 197, 56);\n }\n \n .footer_info_photos_header{\n border-bottom: 3px solid yellow;\n-font-size: 1em;\n }\n \n .footer_comp_tweets_header{\n border-bottom: 3px solid rgb(245, 88, 88);\n"
+                },
+                {
+                    "date": 1675478787280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -195,9 +195,9 @@\n     width:80em;\n     height: 40em;\n }\n \n-.grid_footer_info_items h2{\n+.footer_info_containers h2{\n  font-size: 1em;\n }\n \n .footer_info_aboutus_header{\n"
+                },
+                {
+                    "date": 1675478803546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -196,9 +196,9 @@\n     height: 40em;\n }\n \n .footer_info_containers h2{\n- font-size: 1em;\n+ font-size: .51em;\n }\n \n .footer_info_aboutus_header{\n border-bottom: 3px solid rgb(56, 197, 56);\n"
+                },
+                {
+                    "date": 1675478810072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -196,9 +196,9 @@\n     height: 40em;\n }\n \n .footer_info_containers h2{\n- font-size: .51em;\n+ font-size: 1.5em;\n }\n \n .footer_info_aboutus_header{\n border-bottom: 3px solid rgb(56, 197, 56);\n"
+                },
+                {
+                    "date": 1675478817678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -196,9 +196,9 @@\n     height: 40em;\n }\n \n .footer_info_containers h2{\n- font-size: 1.5em;\n+ font-size: 1.3em;\n }\n \n .footer_info_aboutus_header{\n border-bottom: 3px solid rgb(56, 197, 56);\n"
+                },
+                {
+                    "date": 1675478842813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -199,8 +199,12 @@\n .footer_info_containers h2{\n  font-size: 1.3em;\n }\n \n+..footer_info_containers p{\n+    font-size: 0.5em;\n+}\n+\n .footer_info_aboutus_header{\n border-bottom: 3px solid rgb(56, 197, 56);\n }\n \n"
+                },
+                {
+                    "date": 1675479030966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -199,10 +199,11 @@\n .footer_info_containers h2{\n  font-size: 1.3em;\n }\n \n-..footer_info_containers p{\n+.footer_info_containers p{\n     font-size: 0.5em;\n+    line-height: 0.1em;\n }\n \n .footer_info_aboutus_header{\n border-bottom: 3px solid rgb(56, 197, 56);\n"
+                },
+                {
+                    "date": 1675479040646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -201,9 +201,9 @@\n }\n \n .footer_info_containers p{\n     font-size: 0.5em;\n-    line-height: 0.1em;\n+    \n }\n \n .footer_info_aboutus_header{\n border-bottom: 3px solid rgb(56, 197, 56);\n"
+                },
+                {
+                    "date": 1675479103631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -201,9 +201,9 @@\n }\n \n .footer_info_containers p{\n     font-size: 0.5em;\n-    \n+    white-space: nowrap;\n }\n \n .footer_info_aboutus_header{\n border-bottom: 3px solid rgb(56, 197, 56);\n"
+                },
+                {
+                    "date": 1675479163233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -201,9 +201,9 @@\n }\n \n .footer_info_containers p{\n     font-size: 0.5em;\n-    white-space: nowrap;\n+    line-height: 1em;\n }\n \n .footer_info_aboutus_header{\n border-bottom: 3px solid rgb(56, 197, 56);\n"
+                },
+                {
+                    "date": 1675479170333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -201,9 +201,9 @@\n }\n \n .footer_info_containers p{\n     font-size: 0.5em;\n-    line-height: 1em;\n+    line-height: 1.5em;\n }\n \n .footer_info_aboutus_header{\n border-bottom: 3px solid rgb(56, 197, 56);\n"
+                },
+                {
+                    "date": 1675479178294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -201,9 +201,9 @@\n }\n \n .footer_info_containers p{\n     font-size: 0.5em;\n-    line-height: 1.5em;\n+    line-height: 2.5em;\n }\n \n .footer_info_aboutus_header{\n border-bottom: 3px solid rgb(56, 197, 56);\n"
+                },
+                {
+                    "date": 1675479259697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -250,8 +250,9 @@\n .grid_footer_minion_pics{\n     display: grid;\n     grid-template-columns: auto auto auto ;\n     grid-template-rows: auto auto;\n+    gap:1em;\n }\n \n .footer_comp_tweets img{\n    width: 40px;\n"
+                },
+                {
+                    "date": 1675479276431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -241,9 +241,9 @@\n    height: 30px;\n }\n \n .grid_footer_minion_pics img{\n-    width:80px;\n+    width:3em;\n     height: 100%;\n     gap: 3px;\n }\n \n"
+                },
+                {
+                    "date": 1675479285278,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -241,9 +241,9 @@\n    height: 30px;\n }\n \n .grid_footer_minion_pics img{\n-    width:3em;\n+    width:4em;\n     height: 100%;\n     gap: 3px;\n }\n \n"
+                },
+                {
+                    "date": 1675479297815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -243,9 +243,9 @@\n \n .grid_footer_minion_pics img{\n     width:4em;\n     height: 100%;\n-    gap: 3px;\n+   \n }\n \n .grid_footer_minion_pics{\n     display: grid;\n"
+                },
+                {
+                    "date": 1675479304058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -250,9 +250,9 @@\n .grid_footer_minion_pics{\n     display: grid;\n     grid-template-columns: auto auto auto ;\n     grid-template-rows: auto auto;\n-    gap:1em;\n+    gap:0.5em;\n }\n \n .footer_comp_tweets img{\n    width: 40px;\n"
+                },
+                {
+                    "date": 1675479338467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -243,16 +243,16 @@\n \n .grid_footer_minion_pics img{\n     width:4em;\n     height: 100%;\n-   \n+   gap:0.5em;\n }\n \n .grid_footer_minion_pics{\n     display: grid;\n     grid-template-columns: auto auto auto ;\n     grid-template-rows: auto auto;\n-    gap:0.5em;\n+    \n }\n \n .footer_comp_tweets img{\n    width: 40px;\n"
+                },
+                {
+                    "date": 1675479373237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -243,9 +243,9 @@\n \n .grid_footer_minion_pics img{\n     width:4em;\n     height: 100%;\n-   gap:0.5em;\n+   gap:0.1em;\n }\n \n .grid_footer_minion_pics{\n     display: grid;\n"
+                },
+                {
+                    "date": 1675479382553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -243,15 +243,15 @@\n \n .grid_footer_minion_pics img{\n     width:4em;\n     height: 100%;\n-   gap:0.1em;\n }\n \n .grid_footer_minion_pics{\n     display: grid;\n     grid-template-columns: auto auto auto ;\n     grid-template-rows: auto auto;\n+    gap:0.1em;\n     \n }\n \n .footer_comp_tweets img{\n"
+                },
+                {
+                    "date": 1675479388640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -250,9 +250,8 @@\n     display: grid;\n     grid-template-columns: auto auto auto ;\n     grid-template-rows: auto auto;\n     gap:0.1em;\n-    \n }\n \n .footer_comp_tweets img{\n    width: 40px;\n"
+                },
+                {
+                    "date": 1675479394822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -249,9 +249,9 @@\n .grid_footer_minion_pics{\n     display: grid;\n     grid-template-columns: auto auto auto ;\n     grid-template-rows: auto auto;\n-    gap:0.1em;\n+    gap:0.8em;\n }\n \n .footer_comp_tweets img{\n    width: 40px;\n"
+                },
+                {
+                    "date": 1675479407830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -247,9 +247,9 @@\n }\n \n .grid_footer_minion_pics{\n     display: grid;\n-    grid-template-columns: auto auto auto ;\n+    grid-template-columns: 4em 4em 4em ;\n     grid-template-rows: auto auto;\n     gap:0.8em;\n }\n \n"
+                },
+                {
+                    "date": 1675479425366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -241,9 +241,9 @@\n    height: 30px;\n }\n \n .grid_footer_minion_pics img{\n-    width:4em;\n+    width:5em;\n     height: 100%;\n }\n \n .grid_footer_minion_pics{\n"
+                },
+                {
+                    "date": 1675479435767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -247,9 +247,9 @@\n }\n \n .grid_footer_minion_pics{\n     display: grid;\n-    grid-template-columns: 4em 4em 4em ;\n+    grid-template-columns: 5em 5em 5em ;\n     grid-template-rows: auto auto;\n     gap:0.8em;\n }\n \n"
+                },
+                {
+                    "date": 1675479451016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -241,15 +241,15 @@\n    height: 30px;\n }\n \n .grid_footer_minion_pics img{\n-    width:5em;\n+    width:6em;\n     height: 100%;\n }\n \n .grid_footer_minion_pics{\n     display: grid;\n-    grid-template-columns: 5em 5em 5em ;\n+    grid-template-columns: 6em 6em 6em ;\n     grid-template-rows: auto auto;\n     gap:0.8em;\n }\n \n"
+                },
+                {
+                    "date": 1675479471805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -241,15 +241,15 @@\n    height: 30px;\n }\n \n .grid_footer_minion_pics img{\n-    width:6em;\n+    width:5.5em;\n     height: 100%;\n }\n \n .grid_footer_minion_pics{\n     display: grid;\n-    grid-template-columns: 6em 6em 6em ;\n+    grid-template-columns: 5.5em 5.5em 5.5em ;\n     grid-template-rows: auto auto;\n     gap:0.8em;\n }\n \n"
+                },
+                {
+                    "date": 1675479856335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -204,8 +204,17 @@\n     font-size: 0.5em;\n     line-height: 2.5em;\n }\n \n+.triangle{\n+    display: inline-block;\n+    position: relative;\n+    width: 0.3em;\n+    height:0.3em;\n+    background-color:rgb(56, 197, 56);\n+}\n+\n+\n .footer_info_aboutus_header{\n border-bottom: 3px solid rgb(56, 197, 56);\n }\n \n"
+                },
+                {
+                    "date": 1675480023052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -203,18 +203,19 @@\n .footer_info_containers p{\n     font-size: 0.5em;\n     line-height: 2.5em;\n }\n+.triangle {\n+    width: 0;\n+    height: 0;\n+    \n+    border-bottom: solid 50px transparent;\n+    border-top: solid 50px black;\n+    border-left: solid 50px transparent;\n+    border-right: solid 50px transparent;\n+  }\n \n-.triangle{\n-    display: inline-block;\n-    position: relative;\n-    width: 0.3em;\n-    height:0.3em;\n-    background-color:rgb(56, 197, 56);\n-}\n \n-\n .footer_info_aboutus_header{\n border-bottom: 3px solid rgb(56, 197, 56);\n }\n \n"
+                },
+                {
+                    "date": 1675480050745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -203,19 +203,11 @@\n .footer_info_containers p{\n     font-size: 0.5em;\n     line-height: 2.5em;\n }\n-.triangle {\n-    width: 0;\n-    height: 0;\n-    \n-    border-bottom: solid 50px transparent;\n-    border-top: solid 50px black;\n-    border-left: solid 50px transparent;\n-    border-right: solid 50px transparent;\n-  }\n \n \n+\n .footer_info_aboutus_header{\n border-bottom: 3px solid rgb(56, 197, 56);\n }\n \n"
+                },
+                {
+                    "date": 1675480335013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,12 @@\n     text-align: center;\n     font-family: var(--font-);\n }\n \n+.carousel_items li{\n+    position: absolute;\n+    font-size: 2em;\n+}\n \n .page--home{\n     margin: 0 20em;\n }\n"
+                },
+                {
+                    "date": 1675480378613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,10 @@\n \n .carousel_items li{\n     position: absolute;\n     font-size: 2em;\n+    flex-direction: column;\n+    display: flex;\n }\n \n .page--home{\n     margin: 0 20em;\n"
+                },
+                {
+                    "date": 1675480477339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,13 +11,11 @@\n     text-align: center;\n     font-family: var(--font-);\n }\n \n-.carousel_items li{\n-    position: absolute;\n-    font-size: 2em;\n-    flex-direction: column;\n-    display: flex;\n+.carousel_items {\n+   position: absolute;\n+   height: 100px;\n }\n \n .page--home{\n     margin: 0 20em;\n"
+                },
+                {
+                    "date": 1675480487070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n }\n \n .carousel_items {\n    position: absolute;\n-   height: 100px;\n+   height: 50px;\n }\n \n .page--home{\n     margin: 0 20em;\n"
+                },
+                {
+                    "date": 1675480501272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n }\n \n .carousel_items {\n    position: absolute;\n-   height: 50px;\n+   height: 50vh;\n }\n \n .page--home{\n     margin: 0 20em;\n"
+                },
+                {
+                    "date": 1675480737024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,10 @@\n     flex-direction: row;\n     gap: 5em;\n }\n \n+.\n+\n .carosel_picture{\n     align-items: center;\n }\n \n@@ -106,8 +108,12 @@\n     font-size: 25px;\n     padding-top: 30px;\n }\n \n+.comp_name_header_colour{\n+  color: aqua;\n+}\n+\n .image_post_header{\n     font-size: 25px;\n     padding-top: 50px;\n }\n"
+                },
+                {
+                    "date": 1675480783696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n }\n \n \n body{\n-    display: flex;\n-    flex-direction: column;\n+    /* display: flex;\n+    flex-direction: column; */\n     align-items: center;\n     text-align: center;\n     font-family: var(--font-);\n }\n"
+                },
+                {
+                    "date": 1675480813583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n }\n \n \n body{\n-    /* display: flex;\n-    flex-direction: column; */\n+    display: flex;\n+    flex-direction: column;\n     align-items: center;\n     text-align: center;\n     font-family: var(--font-);\n }\n"
+                },
+                {
+                    "date": 1675480931890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,12 @@\n     flex-direction: row;\n     gap: 5em;\n }\n \n-.\n+.comp_name_header{\n+  display: flex;\n+  flex-direction: row;\n+}\n \n .carosel_picture{\n     align-items: center;\n }\n"
+                },
+                {
+                    "date": 1675481214193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,9 @@\n \n .comp_name_header{\n   display: flex;\n   flex-direction: row;\n+  gap:0.1em;\n }\n \n .carosel_picture{\n     align-items: center;\n"
+                },
+                {
+                    "date": 1675481236539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n \n .comp_name_header{\n   display: flex;\n   flex-direction: row;\n-  gap:0.1em;\n+  margin: 0.1em;\n }\n \n .carosel_picture{\n     align-items: center;\n"
+                },
+                {
+                    "date": 1675481253556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n \n .comp_name_header{\n   display: flex;\n   flex-direction: row;\n-  margin: 0.1em;\n+  gap: 0.5em;\n }\n \n .carosel_picture{\n     align-items: center;\n"
+                },
+                {
+                    "date": 1675481325951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,9 @@\n }\n \n .comp_name{\n     font-size: 1.5em;\n+    line-height: 1em;\n }\n \n .carousel_items{\n     list-style-type: none;\n"
+                },
+                {
+                    "date": 1675481336692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n }\n \n .comp_name{\n     font-size: 1.5em;\n-    line-height: 1em;\n+    line-height: 0.8em;\n }\n \n .carousel_items{\n     list-style-type: none;\n"
+                },
+                {
+                    "date": 1675481344212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n }\n \n .comp_name{\n     font-size: 1.5em;\n-    line-height: 0.8em;\n+    line-height: 0.5em;\n }\n \n .carousel_items{\n     list-style-type: none;\n"
+                },
+                {
+                    "date": 1675481377404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n }\n \n .comp_name{\n     font-size: 1.5em;\n-    line-height: 0.5em;\n+    line-height: 0.2em;\n }\n \n .carousel_items{\n     list-style-type: none;\n"
+                },
+                {
+                    "date": 1675481405424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -114,9 +114,9 @@\n     padding-top: 30px;\n }\n \n .comp_name_header_colour{\n-  color: aqua;\n+  color: rgb(0, 179, 255);\n }\n \n .image_post_header{\n     font-size: 25px;\n"
+                },
+                {
+                    "date": 1675481497196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,8 +61,9 @@\n }\n .page-links_items{\n     display: flex;\n     flex-direction: row;\n+    align-items: center;\n }\n \n .grid_item{\n     display: flex;\n"
+                },
+                {
+                    "date": 1675481512511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n }\n .page-links_items{\n     display: flex;\n     flex-direction: row;\n-    align-items: center;\n+    text-align: center;\n }\n \n .grid_item{\n     display: flex;\n"
+                },
+                {
+                    "date": 1675481528222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,17 +53,17 @@\n \n .comp_name{\n     font-size: 1.5em;\n     line-height: 0.2em;\n+    text-align: center;\n }\n \n .carousel_items{\n     list-style-type: none;\n }\n .page-links_items{\n     display: flex;\n     flex-direction: row;\n-    text-align: center;\n }\n \n .grid_item{\n     display: flex;\n"
+                },
+                {
+                    "date": 1675481549367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n }\n \n .comp_name{\n     font-size: 1.5em;\n-    line-height: 0.2em;\n+    line-height: 0.1em;\n     text-align: center;\n }\n \n .carousel_items{\n"
+                },
+                {
+                    "date": 1675481559005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n }\n \n .comp_name{\n     font-size: 1.5em;\n-    line-height: 0.1em;\n+    line-height: 0.05em;\n     text-align: center;\n }\n \n .carousel_items{\n"
+                },
+                {
+                    "date": 1675481655818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n \n .comp_name{\n     font-size: 1.5em;\n     line-height: 0.05em;\n-    text-align: center;\n+  \n }\n \n .carousel_items{\n     list-style-type: none;\n"
+                },
+                {
+                    "date": 1675481700253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n     flex-direction: column;\n     align-items: center;\n     text-align: center;\n     font-family: var(--font-);\n+    justify-content: space-between;\n }\n \n .carousel_items {\n    position: absolute;\n@@ -53,9 +54,9 @@\n \n .comp_name{\n     font-size: 1.5em;\n     line-height: 0.05em;\n-  \n+    \n }\n \n .carousel_items{\n     list-style-type: none;\n"
+                },
+                {
+                    "date": 1675481717370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n     flex-direction: column;\n     align-items: center;\n     text-align: center;\n     font-family: var(--font-);\n-    justify-content: space-between;\n }\n \n .carousel_items {\n    position: absolute;\n"
+                },
+                {
+                    "date": 1675481731730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n \n .comp_name{\n     font-size: 1.5em;\n     line-height: 0.05em;\n-    \n+    padding-top: 30px;\n }\n \n .carousel_items{\n     list-style-type: none;\n"
+                },
+                {
+                    "date": 1675481740465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n \n .comp_name{\n     font-size: 1.5em;\n     line-height: 0.05em;\n-    padding-top: 30px;\n+    padding-top: 50px;\n }\n \n .carousel_items{\n     list-style-type: none;\n"
+                },
+                {
+                    "date": 1675481920114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n   flex-direction: row;\n   gap: 0.5em;\n }\n \n+\n .carosel_picture{\n     align-items: center;\n }\n \n@@ -43,9 +44,9 @@\n     align-items: center;\n     justify-content: center;\n }\n .page_header_logo h1{\n-    font-size: 1em;\n+    font-size: 2em;\n }\n .page_header_logo img{\n     width: 1em;\n     height: 0.5em;\n"
+                },
+                {
+                    "date": 1675481938250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,10 +47,10 @@\n .page_header_logo h1{\n     font-size: 2em;\n }\n .page_header_logo img{\n-    width: 1em;\n-    height: 0.5em;\n+    width: 2em;\n+    height: 100%;\n }\n \n .comp_name{\n     font-size: 1.5em;\n"
+                },
+                {
+                    "date": 1675481955752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,10 +47,10 @@\n .page_header_logo h1{\n     font-size: 2em;\n }\n .page_header_logo img{\n-    width: 2em;\n-    height: 100%;\n+    width: 3em;\n+    height: 1.5em;\n }\n \n .comp_name{\n     font-size: 1.5em;\n"
+                },
+                {
+                    "date": 1675482032324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n }\n .page_header{\n     display: flex;\n     flex-direction: row;\n-    gap: 5em;\n+    margin: 5em;\n }\n \n .comp_name_header{\n   display: flex;\n"
+                },
+                {
+                    "date": 1675482041146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,8 @@\n }\n .page_header{\n     display: flex;\n     flex-direction: row;\n-    margin: 5em;\n }\n \n .comp_name_header{\n   display: flex;\n"
+                },
+                {
+                    "date": 1675482095540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,12 +27,13 @@\n \n .comp_name_header{\n   display: flex;\n   flex-direction: row;\n-  gap: 0.5em;\n }\n \n \n+\n+\n .carosel_picture{\n     align-items: center;\n }\n \n"
+                },
+                {
+                    "date": 1675482162657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,10 +30,8 @@\n   flex-direction: row;\n }\n \n \n-\n-\n .carosel_picture{\n     align-items: center;\n }\n \n@@ -45,8 +43,9 @@\n     justify-content: center;\n }\n .page_header_logo h1{\n     font-size: 2em;\n+    padding-left: 1em;\n }\n .page_header_logo img{\n     width: 3em;\n     height: 1.5em;\n"
+                },
+                {
+                    "date": 1675482175695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,8 @@\n     justify-content: center;\n }\n .page_header_logo h1{\n     font-size: 2em;\n-    padding-left: 1em;\n }\n .page_header_logo img{\n     width: 3em;\n     height: 1.5em;\n"
+                },
+                {
+                    "date": 1675482277757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,8 +43,9 @@\n     justify-content: center;\n }\n .page_header_logo h1{\n     font-size: 2em;\n+    padding-left: 1em;\n }\n .page_header_logo img{\n     width: 3em;\n     height: 1.5em;\n"
+                },
+                {
+                    "date": 1675482284995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,8 @@\n     justify-content: center;\n }\n .page_header_logo h1{\n     font-size: 2em;\n-    padding-left: 1em;\n }\n .page_header_logo img{\n     width: 3em;\n     height: 1.5em;\n"
+                },
+                {
+                    "date": 1675482338916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n \n .comp_name_header{\n   display: flex;\n   flex-direction: row;\n+  gap:0.5em;\n }\n \n \n .carosel_picture{\n"
+                },
+                {
+                    "date": 1675482725409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -284,6 +284,7 @@\n }\n \n .footer_enter_email{\n     padding-left: 20px;\n+    background-color: rgb(227, 76, 76);\n }\n \n"
+                },
+                {
+                    "date": 1675482750503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -284,7 +284,8 @@\n }\n \n .footer_enter_email{\n     padding-left: 20px;\n+    width: 300px;\n     background-color: rgb(227, 76, 76);\n }\n \n"
+                },
+                {
+                    "date": 1675482756043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -284,8 +284,8 @@\n }\n \n .footer_enter_email{\n     padding-left: 20px;\n-    width: 300px;\n+    width: 100px;\n     background-color: rgb(227, 76, 76);\n }\n \n"
+                },
+                {
+                    "date": 1675482764230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -284,8 +284,8 @@\n }\n \n .footer_enter_email{\n     padding-left: 20px;\n-    width: 100px;\n+    width: 130px;\n     background-color: rgb(227, 76, 76);\n }\n \n"
+                },
+                {
+                    "date": 1675482784483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -285,7 +285,8 @@\n \n .footer_enter_email{\n     padding-left: 20px;\n     width: 130px;\n+    font-size: 20px;\n     background-color: rgb(227, 76, 76);\n }\n \n"
+                },
+                {
+                    "date": 1675482793484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -285,8 +285,8 @@\n \n .footer_enter_email{\n     padding-left: 20px;\n     width: 130px;\n-    font-size: 20px;\n+    font-size: 15px;\n     background-color: rgb(227, 76, 76);\n }\n \n"
+                },
+                {
+                    "date": 1675482805165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -284,9 +284,9 @@\n }\n \n .footer_enter_email{\n     padding-left: 20px;\n-    width: 130px;\n+    width: 150px;\n     font-size: 15px;\n     background-color: rgb(227, 76, 76);\n }\n \n"
+                },
+                {
+                    "date": 1675482864182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -285,8 +285,8 @@\n \n .footer_enter_email{\n     padding-left: 20px;\n     width: 150px;\n-    font-size: 15px;\n+    font-size: 10px;\n     background-color: rgb(227, 76, 76);\n }\n \n"
                 }
             ],
             "date": 1675281041241,

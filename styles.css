@@ -1,5 +1,6 @@
 :root{
-    --font1-: 'Open Sans';
+    --font-: 'Open Sans';
+    --font-colour: white;
 }
 
 
@@ -8,13 +9,13 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-family: var(--font1-);
+    font-family: var(--font-);
 }
 
-footer{
-    padding-top: 180px;
+.carousel_items {
+   position: absolute;
+   height: 50vh;
 }
-
 
 .page--home{
     margin: 0 20em;
@@ -22,8 +23,14 @@ footer{
 .page_header{
     display: flex;
     flex-direction: row;
-    gap: 5em;
 }
+
+.comp_name_header{
+  display: flex;
+  flex-direction: row;
+  gap:0.5em;
+}
+
 
 .carosel_picture{
     align-items: center;
@@ -37,15 +44,17 @@ footer{
     justify-content: center;
 }
 .page_header_logo h1{
-    font-size: 1em;
+    font-size: 2em;
 }
 .page_header_logo img{
-    width: 1em;
-    height: 0.5em;
+    width: 3em;
+    height: 1.5em;
 }
 
 .comp_name{
-    font-size: 25px;
+    font-size: 1.5em;
+    line-height: 0.05em;
+    padding-top: 50px;
 }
 
 .carousel_items{
@@ -61,33 +70,40 @@ footer{
     flex-direction: column;
     align-content: center;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 2em;
 }
 
 .grid_item img{
-     height: 70px;
-     width: 70px;
+     height: 5em;
+     width: 5em;
 }
 
 .grid_containers{
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    gap: 1.5em;
+    padding-left: 14em;
+    padding-right: 14em;
 }
 
 .grid_containers p{
- font-size: 14px;
+ font-size: 0.3em;
+}
+
+.grid_containers h3{
+    font-size: 0.5em;
 }
 
 .grid_image_post_containers{
     display: grid;
     grid-template-columns: auto auto auto;
     padding-top: 10px;
+    gap: 30px;
 }
 
 .grid_image_post_containers img{
-    width: 20em;
-    height: 20em;
+    width: 25em;
+    height: 100%;
 }
 
 .comp_description{
@@ -97,6 +113,10 @@ footer{
 .comp_description_header {
     font-size: 25px;
     padding-top: 30px;
+}
+
+.comp_name_header_colour{
+  color: rgb(0, 179, 255);
 }
 
 .image_post_header{
@@ -125,11 +145,18 @@ footer{
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
+    gap: 25px;
 }
 
 .grid_multiple_image_containers img{
-    width: 20em;
-    height: 20em;
+    width: 25em;
+    height: 100%;
+}
+
+.thingsabove{
+  width: 80em;
+  height: 100%;
+  align-items: center;
 }
 
 .sample_menu_header{
@@ -139,11 +166,11 @@ footer{
 
 .accordion{
     padding-top: 10px;
-    width: 687px;
 }
 
 .grid_sponsor_logo_parent_containers{
 object-fit: contain;
+padding-bottom: 100px;
 }
 
 .grid_sponsor_logo_child_containers{
@@ -158,7 +185,7 @@ width: 100%;
 height: 100%;
 }
 .grid_sponsor_logo_item img{
-    width: 100%;
+    width: 14em;
     height: 100%;
     }
 
@@ -176,12 +203,49 @@ height: 100%;
     gap:10px;
 }
 
+
+footer{
+    padding-top: 30px;
+    background-color: rgb(34, 34, 72);
+    color: var(--font-colour);
+    width:80em;
+    height: 40em;
+}
+
+.footer_info_containers h2{
+ font-size: 1.3em;
+}
+
+.footer_info_containers p{
+    font-size: 0.5em;
+    line-height: 2.5em;
+}
+
+
+
+.footer_info_aboutus_header{
+border-bottom: 3px solid rgb(56, 197, 56);
+}
+
+.footer_info_photos_header{
+border-bottom: 3px solid yellow;
+}
+
+.footer_comp_tweets_header{
+border-bottom: 3px solid rgb(245, 88, 88);
+}
+
+.footer_info_newsletter_header{
+border-bottom: 3px solid rgb(88, 214, 245);
+}
+
 .footer_info_containers{
     display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-columns: 18em 18em 18em 18em;
     padding-top: 120px;
     gap:40px;
     text-align: left;
+    width: 80em;
 }
 
 .social_links_icons{
@@ -196,15 +260,15 @@ height: 100%;
 }
 
 .grid_footer_minion_pics img{
-    width:80px;
+    width:5.5em;
     height: 100%;
-    gap: 3px;
 }
 
 .grid_footer_minion_pics{
     display: grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: 5.5em 5.5em 5.5em ;
     grid-template-rows: auto auto;
+    gap:0.8em;
 }
 
 .footer_comp_tweets img{
@@ -221,4 +285,8 @@ height: 100%;
 
 .footer_enter_email{
     padding-left: 20px;
+    width: 150px;
+    font-size: 10px;
+    background-color: rgb(227, 76, 76);
 }
+
