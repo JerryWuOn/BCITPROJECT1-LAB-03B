@@ -3,6 +3,10 @@
     --font-colour: white;
 }
 
+* {
+    margin: 0 20em;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -13,11 +17,11 @@ body{
 
 .carousel_items {
    position: absolute;
-   height: 50em;
+   height: 50vh;
 }
 
 .page--home{
-    margin: 0 10em;
+    margin: 0 20em;
 }
 .page_header{
     display: flex;
@@ -27,11 +31,12 @@ body{
 .comp_name_header{
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap:0.5em;
 }
 
 
-.carosel_picture{
+.carousel_picture{
     align-items: center;
 }
 
@@ -98,16 +103,18 @@ body{
     grid-template-columns: auto auto auto;
     padding-top: 10px;
     gap: 30px;
+
 }
 
 .grid_image_post_containers img{
-    width: 18em;
+    width: 25em;
     height: 100%;
 }
 
 .comp_description{
     padding-top: 0.938em;
 }
+
 
 .comp_description_header {
     font-size: 25px;
@@ -117,6 +124,11 @@ body{
 .comp_name_header_colour{
   color: rgb(0, 179, 255);
 }
+
+
+.comp_name_header{
+    display: flex;
+  }
 
 .image_post_header{
     font-size: 25px;
@@ -148,8 +160,8 @@ body{
 }
 
 .grid_multiple_image_containers img{
-        width: 18em;
-        height: 100%;
+    width: 25em;
+    height: 100%;
 }
 
 .thingsabove{
@@ -163,20 +175,20 @@ body{
     padding-top: 40px;
 }
 
-.accordion img{
-    width: 62em;
-    height: 100%;
+.accordion{
+    padding-top: 10px;
 }
 
 .grid_sponsor_logo_parent_containers{
-    display: flex;
-    flex-direction:row;
-    margin-bottom: 5em;
+object-fit: contain;
+padding-bottom: 100px;
 }
 
 .grid_sponsor_logo_child_containers{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
     gap:30px;
-    margin-top: 5em;
+    padding-top: 50px;
 }
 
 .grid_sponsor_logo_item{
@@ -289,3 +301,15 @@ border-bottom: 3px solid rgb(88, 214, 245);
     background-color: rgb(227, 76, 76);
 }
 
+/* Small only */
+@media screen and (max-width: 39.9375em) {}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+/* Medium only */
+@media screen and (min-width: 40em) and
+(max-width: 63.9375em) {}
+/* Large and up */
+@media screen and (min-width: 64em) {}
+/* Large only */
+@media screen and (min-width: 64em) and
+(max-width: 74.9375em) {}

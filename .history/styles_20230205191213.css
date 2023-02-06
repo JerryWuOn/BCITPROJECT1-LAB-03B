@@ -13,7 +13,7 @@ body{
 
 .carousel_items {
    position: absolute;
-   height: 50em;
+   height: 50h;
 }
 
 .page--home{
@@ -169,14 +169,15 @@ body{
 }
 
 .grid_sponsor_logo_parent_containers{
-    display: flex;
-    flex-direction:row;
-    margin-bottom: 5em;
+object-fit: contain;
+padding-bottom: 100px;
 }
 
 .grid_sponsor_logo_child_containers{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
     gap:30px;
-    margin-top: 5em;
+    padding-top: 50px;
 }
 
 .grid_sponsor_logo_item{

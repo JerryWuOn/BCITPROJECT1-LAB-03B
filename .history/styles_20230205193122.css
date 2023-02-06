@@ -170,7 +170,7 @@ body{
 
 .grid_sponsor_logo_parent_containers{
     display: flex;
-    flex-direction:row;
+    flex:;
     margin-bottom: 5em;
 }
 

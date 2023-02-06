@@ -13,11 +13,11 @@ body{
 
 .carousel_items {
    position: absolute;
-   height: 50em;
+   height: 50vh;
 }
 
 .page--home{
-    margin: 0 10em;
+    margin: 0 20em;
 }
 .page_header{
     display: flex;
@@ -163,20 +163,24 @@ body{
     padding-top: 40px;
 }
 
-.accordion img{
-    width: 62em;
-    height: 100%;
+.accordion{
+    padding-top: 10px;
+    .grid_image_post_containers img{
+        width: 20em;
+        height: 100%;
+    }
 }
 
 .grid_sponsor_logo_parent_containers{
-    display: flex;
-    flex-direction:row;
-    margin-bottom: 5em;
+object-fit: contain;
+padding-bottom: 100px;
 }
 
 .grid_sponsor_logo_child_containers{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
     gap:30px;
-    margin-top: 5em;
+    padding-top: 50px;
 }
 
 .grid_sponsor_logo_item{

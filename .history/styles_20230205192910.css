@@ -169,14 +169,14 @@ body{
 }
 
 .grid_sponsor_logo_parent_containers{
-    display: flex;
-    flex-direction:row;
-    margin-bottom: 5em;
+object-fit: contain;
+margin-bottom: 5em;
 }
 
 .grid_sponsor_logo_child_containers{
+    display: grid;
     gap:30px;
-    margin-top: 5em;
+    margin-top: 30em;
 }
 
 .grid_sponsor_logo_item{
