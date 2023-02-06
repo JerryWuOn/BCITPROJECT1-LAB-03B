@@ -175,6 +175,8 @@ body{
 }
 
 .grid_sponsor_logo_child_containers{
+    display: flex;
+    dis
     gap:30px;
     margin-top: 5em;
 }
@@ -200,21 +202,15 @@ height: 100%;
     flex-direction: row;
     text-align: left;
     gap:10px;
-    margin-right: 10em;
-    margin-left: 10em;
 }
 
-.page--footer{
-    background-color: rgb(34, 34, 72);
-    width: 90em;
-    margin: 0;
-}
-.footer_description{
+
+footer{
     padding-top: 30px;
+    background-color: rgb(34, 34, 72);
     color: var(--font-colour);
     width:80em;
     height: 40em;
-    margin-left: 5em;
 }
 
 .footer_info_containers h2{

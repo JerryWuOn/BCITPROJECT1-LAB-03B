@@ -214,7 +214,8 @@ height: 100%;
     color: var(--font-colour);
     width:80em;
     height: 40em;
-    margin-left: 5em;
+    margin-right: 10em;
+    margin-left: 10em;
 }
 
 .footer_info_containers h2{

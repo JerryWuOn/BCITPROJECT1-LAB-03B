@@ -200,21 +200,18 @@ height: 100%;
     flex-direction: row;
     text-align: left;
     gap:10px;
-    margin-right: 10em;
-    margin-left: 10em;
 }
 
 .page--footer{
     background-color: rgb(34, 34, 72);
-    width: 90em;
-    margin: 0;
+    width: 100em;
 }
 .footer_description{
     padding-top: 30px;
     color: var(--font-colour);
     width:80em;
     height: 40em;
-    margin-left: 5em;
+    margin: 0;
 }
 
 .footer_info_containers h2{
