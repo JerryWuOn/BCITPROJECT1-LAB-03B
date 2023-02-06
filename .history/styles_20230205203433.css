@@ -60,9 +60,7 @@ body{
     line-height: 0.05em;
     padding-top: 50px;
 }
-mark{
-    background-color: #f1f1f1;
-}
+mark
 .carousel_items{
     list-style-type: none;
     position: absolute;
@@ -243,6 +241,7 @@ height: 100%;
     font-size: 0.5em;
     line-height: 2.5em;
 }
+
 
 
 .footer_info_aboutus_header{
