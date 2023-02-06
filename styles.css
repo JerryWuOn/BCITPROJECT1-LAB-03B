@@ -35,6 +35,10 @@ body{
     align-items: center;
 }
 
+.page-links_items img{
+    width: 6em;
+    height:100%;
+}
 
 .page_header_logo{
     display: flex;
